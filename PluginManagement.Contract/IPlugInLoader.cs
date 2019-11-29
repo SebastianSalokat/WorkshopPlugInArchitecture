@@ -3,5 +3,6 @@
     public interface IPlugInLoader
     {
         void Load();
+        void RaiseMessage();
     }
 }

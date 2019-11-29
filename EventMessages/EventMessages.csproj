@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <AssemblyName>Company.Product.Logic.PlugInManagement.Contract</AssemblyName>
-    <RootNamespace>Company.Product.Logic.PlugInManagement.Contract</RootNamespace>
+    <AssemblyName>Company.Product.CrossCutting.DataClasses.EventMessages</AssemblyName>
+    <RootNamespace>Company.Product.CrossCutting.DataClasses.EventMessages</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

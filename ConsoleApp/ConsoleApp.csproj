@@ -16,4 +16,10 @@
     <ProjectReference Include="..\Mappings\Mappings.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Company.Product.Logic.PlugIn.MyFirstPlugIn.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

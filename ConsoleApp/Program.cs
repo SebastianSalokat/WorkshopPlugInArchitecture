@@ -17,14 +17,26 @@ namespace Company.Product.UI.ConsoleApp
 
             InitializeDiContainer();
 
+            Console.WriteLine("#### Call message tester ####");
+
+            var messageTester = DiContainer.Get<IMyMessageSubscriptionTester>();
+
+            messageTester.FullTest();
+            Console.WriteLine("#### Test finished ####");
+
+
+            Console.WriteLine("### Program call PlugInLoader.Load ###");
             var plugInLoader = DiContainer.Get<IPlugInLoader>();
 
-            Console.WriteLine("Program call PlugInLoader.Load");
             plugInLoader.Load();
+            Console.WriteLine("### PlugInLoader.Load Finished ###");
 
 
+            Console.WriteLine("Call Plugins");
 
-
+            plugInLoader.RaiseMessage();
+            plugInLoader.RaiseMessage();
+            plugInLoader.RaiseMessage();
 
             Console.WriteLine("Done.");
             Console.WriteLine("Press any key to quit...");

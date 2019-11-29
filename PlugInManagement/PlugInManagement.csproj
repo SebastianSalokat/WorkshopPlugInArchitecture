@@ -7,6 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Core.Contract\Core.Contract.csproj" />
+    <ProjectReference Include="..\EventMessages\EventMessages.csproj" />
     <ProjectReference Include="..\PluginManagement.Contract\PluginManagement.Contract.csproj" />
   </ItemGroup>
 

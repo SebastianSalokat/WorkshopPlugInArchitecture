@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Company.Product.Logic.PlugInManagement</AssemblyName>
+    <RootNamespace>Company.Product.Logic.PlugInManagement</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PluginManagement.Contract\PluginManagement.Contract.csproj" />
+  </ItemGroup>
+
+</Project>

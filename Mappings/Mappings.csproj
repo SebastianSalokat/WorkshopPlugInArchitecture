@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Company.Product.DI.Mappings</AssemblyName>
+    <RootNamespace>Company.Product.DI.Mappings</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Core.Contract\Core.Contract.csproj" />
+    <ProjectReference Include="..\PluginManagement.Contract\PluginManagement.Contract.csproj" />
+    <ProjectReference Include="..\PlugInManagement\PlugInManagement.csproj" />
+  </ItemGroup>
+
+</Project>

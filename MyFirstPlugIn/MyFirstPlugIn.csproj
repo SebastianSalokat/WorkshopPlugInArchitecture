@@ -9,7 +9,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Core.Contract\Core.Contract.csproj" />
     <ProjectReference Include="..\EventMessages\EventMessages.csproj" />
-    <ProjectReference Include="..\PluginManagement.Contract\PluginManagement.Contract.csproj" />
+    <ProjectReference Include="..\PluginManagement.Contract\PlugInManagement.Contract.csproj" />
   </ItemGroup>
 
 

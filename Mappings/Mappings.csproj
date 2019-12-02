@@ -9,7 +9,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Core.Contract\Core.Contract.csproj" />
     <ProjectReference Include="..\Core\Core.csproj" />
-    <ProjectReference Include="..\PluginManagement.Contract\PluginManagement.Contract.csproj" />
+    <ProjectReference Include="..\PluginManagement.Contract\PlugInManagement.Contract.csproj" />
     <ProjectReference Include="..\PlugInManagement\PlugInManagement.csproj" />
   </ItemGroup>
 

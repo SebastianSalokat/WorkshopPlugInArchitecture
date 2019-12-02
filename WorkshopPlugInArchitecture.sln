@@ -19,7 +19,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PlugIn", "PlugIn", "{B12609
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlugInManagement", "PlugInManagement\PlugInManagement.csproj", "{4149DBF0-BE6B-46B6-8DF8-1A39E31816AF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PluginManagement.Contract", "PluginManagement.Contract\PluginManagement.Contract.csproj", "{5DDCCAD6-3797-4FE8-9AD0-1A29DD41485C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlugInManagement.Contract", "PluginManagement.Contract\PlugInManagement.Contract.csproj", "{5DDCCAD6-3797-4FE8-9AD0-1A29DD41485C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mappings", "Mappings\Mappings.csproj", "{6266B317-DB8D-4859-B1A6-22146FC737E3}"
 EndProject
@@ -27,11 +27,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Contract", "Core.Contr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "Core\Core.csproj", "{253D1155-A879-4BA4-8DE2-B4B7EDD368BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFirstPlugIn", "MyFirstPlugIn\MyFirstPlugIn.csproj", "{5AF43897-E6F4-4E1B-8874-93B14584EBAF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFirstPlugIn", "MyFirstPlugIn\MyFirstPlugIn.csproj", "{5AF43897-E6F4-4E1B-8874-93B14584EBAF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataClasses", "DataClasses", "{35C46751-6F4E-4BC4-9549-66E65E4DFE28}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventMessages", "EventMessages\EventMessages.csproj", "{D15F0BCC-1B86-488C-9C61-4ED536979714}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventMessages", "EventMessages\EventMessages.csproj", "{D15F0BCC-1B86-488C-9C61-4ED536979714}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySecondPlugIn", "MySecondPlugIn\MySecondPlugIn.csproj", "{C1F6D1C7-6139-4F5D-A6BD-0B0D2240BCBD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,6 +73,10 @@ Global
 		{D15F0BCC-1B86-488C-9C61-4ED536979714}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D15F0BCC-1B86-488C-9C61-4ED536979714}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D15F0BCC-1B86-488C-9C61-4ED536979714}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1F6D1C7-6139-4F5D-A6BD-0B0D2240BCBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1F6D1C7-6139-4F5D-A6BD-0B0D2240BCBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1F6D1C7-6139-4F5D-A6BD-0B0D2240BCBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1F6D1C7-6139-4F5D-A6BD-0B0D2240BCBD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -86,6 +92,7 @@ Global
 		{5AF43897-E6F4-4E1B-8874-93B14584EBAF} = {B126098B-9F6B-41F3-9CDF-F52AF8C8E62A}
 		{35C46751-6F4E-4BC4-9549-66E65E4DFE28} = {434CF3C8-2FF8-436C-B1AD-9160F0F92280}
 		{D15F0BCC-1B86-488C-9C61-4ED536979714} = {35C46751-6F4E-4BC4-9549-66E65E4DFE28}
+		{C1F6D1C7-6139-4F5D-A6BD-0B0D2240BCBD} = {B126098B-9F6B-41F3-9CDF-F52AF8C8E62A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {46CE1EA8-2240-4AA9-ADF6-C653A7CF967D}

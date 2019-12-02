@@ -10,22 +10,24 @@ namespace Company.Product.Logic.PlugInManagement
     public class PlugInLoader : IPlugInLoader
     {
         private readonly IEventBroker _eventBroker;
+        private readonly IDiContainer _diContainer;
         private int _messageCount = 1;
 
-        public PlugInLoader(IEventBroker eventBroker)
+        private const string Plugins = "PlugIns";
+        private const string SearchPattern = "*.dll";
+
+        public PlugInLoader(IEventBroker eventBroker, IDiContainer diContainer)
         {
             _eventBroker = eventBroker;
+            _diContainer = diContainer;
         }
 
         public void Load()
         {
 
-            //TODO: DO Reflection Magic
-            
+            var currentDirectory = Path.Combine(Environment.CurrentDirectory, Plugins);
 
-            var currentDirectory = Environment.CurrentDirectory;
-
-            var files = Directory.GetFiles(currentDirectory, "*.dll");
+            var files = Directory.GetFiles(currentDirectory, SearchPattern, SearchOption.AllDirectories);
 
             foreach (var file in files)
             {
@@ -35,24 +37,43 @@ namespace Company.Product.Logic.PlugInManagement
 
                 foreach (var type in types)
                 {
-                    if (type.GetInterface(nameof(IPlugIn))) 
+                    var plugInInterfaces = type.GetInterface(nameof(IPlugIn));
+                    if (plugInInterfaces != null)
+                    {
+                        var instance = Activator.CreateInstance(type);
 
+                        if (!(instance is IPlugIn plugIn))
+                        {
+                            throw new Exception("Could not create instance of plugIn!");
+                        }
 
+                        plugIn.AddMapping(_diContainer);
+                        plugIn.AddMessageSubscription(_diContainer, _eventBroker);
+                    }
                 }
-
             }
-
         }
 
-        public void RaiseMessage()
+        public void RaiseMyPublicEventMessage()
         {
-
             var myPublicEventMessage = new MyPublicEventMessage()
             {
-                Message = "PlugInLoader calls PlugIns!!!!",
+                Message = $"{nameof(PlugInLoader)} calls PlugIns with {nameof(MyPublicEventMessage)}!!!!",
                 MessageNumber = _messageCount
             };
             _eventBroker.Raise(myPublicEventMessage);
+
+            _messageCount++;
+        }
+
+        public void RaiseMySecondPublicEventMessage()
+        {
+            var mySecondPublicEventMessage = new MySecondPublicEventMessage()
+            {
+                Message = $"{nameof(PlugInLoader)} calls {nameof(MySecondPublicEventMessage)}!!!!",
+                MessageNumber = _messageCount
+            };
+            _eventBroker.Raise(mySecondPublicEventMessage);
 
             _messageCount++;
         }

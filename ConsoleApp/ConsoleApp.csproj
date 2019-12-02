@@ -17,8 +17,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Company.Product.Logic.PlugIn.MyFirstPlugIn.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <None Update="PlugIns\Company.Product.Logic.PlugIn.MyFirstPlugIn.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="PlugIns\Company.Product.Logic.PlugIn.MySecondPlugIn.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
 

@@ -12,6 +12,7 @@ namespace Company.Product.DI.Mappings
         {
             diContainer.Register<IPlugInLoader, PlugInLoader>();
             diContainer.Register<IMyMessageSubscriptionTester, MyMessageSubscriptionTester>();
+            diContainer.Register<IMyPublicMessageCaller, MyPublicMessageCaller>();
 
             diContainer.Register<IEventBroker, EventBroker>(Scope.Singleton);
 

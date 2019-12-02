@@ -2,8 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <AssemblyName>Company.Product.Logic.PlugInManagement</AssemblyName>
-    <RootNamespace>Company.Product.Logic.PlugInManagement</RootNamespace>
+    <AssemblyName>Company.Product.Logic.PlugIn.MySecondPlugIn</AssemblyName>
+    <RootNamespace>Company.Product.Logic.PlugIn.MySecondPlugIn</RootNamespace>
+
   </PropertyGroup>
 
   <ItemGroup>

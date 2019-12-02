@@ -34,9 +34,16 @@ namespace Company.Product.UI.ConsoleApp
 
             Console.WriteLine("Call Plugins");
 
-            plugInLoader.RaiseMessage();
-            plugInLoader.RaiseMessage();
-            plugInLoader.RaiseMessage();
+            plugInLoader.RaiseMyPublicEventMessage();
+            plugInLoader.RaiseMyPublicEventMessage();
+            plugInLoader.RaiseMyPublicEventMessage();
+
+
+            Console.WriteLine("##################");
+
+            plugInLoader.RaiseMySecondPublicEventMessage();
+
+            Console.WriteLine("########################");
 
             Console.WriteLine("Done.");
             Console.WriteLine("Press any key to quit...");

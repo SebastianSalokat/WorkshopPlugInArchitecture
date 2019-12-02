@@ -19,7 +19,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PlugIn", "PlugIn", "{B12609
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlugInManagement", "PlugInManagement\PlugInManagement.csproj", "{4149DBF0-BE6B-46B6-8DF8-1A39E31816AF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlugInManagement.Contract", "PluginManagement.Contract\PlugInManagement.Contract.csproj", "{5DDCCAD6-3797-4FE8-9AD0-1A29DD41485C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlugInManagement.Contract", "PlugInManagement.Contract\PlugInManagement.Contract.csproj", "{5DDCCAD6-3797-4FE8-9AD0-1A29DD41485C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mappings", "Mappings\Mappings.csproj", "{6266B317-DB8D-4859-B1A6-22146FC737E3}"
 EndProject
